@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>おりーぶグループ 採用サイト｜あなたの経験が、誰かの「できる」に変わる。</title>
+<meta name="description" content="おりーぶグループの採用情報。兵庫県伊丹市・尼崎市で、児童発達支援・放課後等デイサービス・就労継続支援B型・グループホームを運営しています。資格がなくても始められる仕事があります。見学は30分から。">
+<meta property="og:title" content="おりーぶグループ 採用サイト｜あなたの経験が、誰かの「できる」に変わる。">
+<meta property="og:description" content="福祉の経験だけが、必要なわけじゃない。伊丹市・尼崎市の福祉の仕事。まずは30分の見学から。">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Zen+Old+Mincho:wght@400;600&display=swap" rel="stylesheet">
+<!--
+  ========================================================================
+  おりーぶグループ 採用LP（完成版・A×C案）
+  制作：アビエルトワークス（株式会社Brifu）／ DESIGN.md・CONTENTS.md 準拠
+  ------------------------------------------------------------------------
+  ■ データは下部 <script> の DATA に集約。ここだけ書き換えれば更新できる。
+  ■ 求人条件は Indeed / アットカンパニーの原稿と同一の値にすること。
+  ■ 【要確認】【仮】はクライアント確認前のダミー。公開前に処理。
+  ■ 写真：利用者が写る素材は掲載同意の確認が必須（skill-01, ep-01〜03）。
+  ========================================================================
+-->
+<style>
+:root{
+  /* 配色：水色（アクセント）＋黄緑（ブランド） */
+  --sky:#2F9BC4; --sky-d:#237B9C; --sky-pale:#E3F2F8; --sky-ink:#1F6F8F;
+  --green:#7CB342; --green-d:#5E8F2C; --green-ink:#4E7A22; --green-pale:#EDF4E1;
+  --paper:#FBFBF8; --alt:#F2F4EF; --ink:#16202A; --ink-2:#4B5763; --ink-3:#77838F;
+  --line:#E3E5DF; --line-2:#CFD3CB;
+  /* 反転セクションの地色（グリーン・明るさ2段階up）。1段階戻すなら #3C5536 */
+  --dark:#4C6B45; --dark-2:#415C3B;
+  --go:"Zen Kaku Gothic New",system-ui,-apple-system,"Hiragino Kaku Gothic ProN",sans-serif;
+  --mi:"Zen Old Mincho","Hiragino Mincho ProN",serif;
+  --ease:cubic-bezier(.2,.6,.3,1);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--go);
+  font-size:16px;line-height:1.95;letter-spacing:.015em;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+h1,h2,h3{margin:0;line-height:1.45;font-weight:700}
+p{margin:0 0 1.15em}
+a{color:inherit}
+ul{margin:0;padding:0;list-style:none}
+:focus-visible{outline:2px solid var(--sky);outline-offset:3px;border-radius:2px}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+@media(min-width:900px){.wrap{padding:0 44px}}
+.band{padding:74px 0}
+@media(min-width:900px){.band{padding:104px 0}}
+
+/* ===== ヘッダー ===== */
+.head{position:absolute;top:22px;left:0;right:0;z-index:30}
+.head-in{display:flex;align-items:flex-start;justify-content:space-between;gap:16px}
+.brand{text-decoration:none;color:#fff;text-shadow:0 2px 16px rgba(0,0,0,.45)}
+.brand b{display:block;font-size:18px;letter-spacing:.08em}
+.brand small{display:block;font-size:10px;letter-spacing:.24em;opacity:.88;font-weight:400}
+.pill{display:none;background:#fff;border-radius:999px;padding:15px 28px;gap:22px;align-items:center;
+  font-size:13.5px;box-shadow:0 10px 30px rgba(22,32,42,.14)}
+.pill a{text-decoration:none;transition:color .2s var(--ease)}
+.pill a:hover{color:var(--sky-ink)}
+@media(min-width:1060px){.pill{display:flex}}
+.req-btn{position:absolute;z-index:30;right:20px;top:92px;display:none;background:var(--sky);
+  color:#fff;text-decoration:none;font-weight:700;font-size:14px;letter-spacing:.12em;
+  padding:24px 30px;transition:background .2s var(--ease)}
+.req-btn:hover{background:var(--sky-d)}
+@media(min-width:1060px){.req-btn{display:block;right:44px}}
+.stickybar{position:fixed;top:0;left:0;right:0;z-index:35;background:rgba(251,251,248,.96);
+  border-bottom:1px solid var(--line);backdrop-filter:blur(8px);
+  transform:translateY(-100%);transition:transform .3s var(--ease)}
+.stickybar.on{transform:none}
+.stickybar .wrap{display:flex;align-items:center;justify-content:space-between;gap:18px;height:58px}
+.stickybar b{font-size:15px;letter-spacing:.06em;white-space:nowrap}
+.stickybar nav{display:none;gap:20px;font-size:13.5px}
+.stickybar nav a{color:var(--ink-2);text-decoration:none;transition:color .2s var(--ease)}
+.stickybar nav a:hover{color:var(--sky-ink)}
+@media(min-width:1060px){.stickybar nav{display:flex}}
+.stickybar .go{background:var(--green);color:#fff;text-decoration:none;font-size:13.5px;
+  font-weight:700;padding:11px 18px;white-space:nowrap;transition:background .2s var(--ease)}
+.stickybar .go:hover{background:var(--green-d)}
+
+/* ===== ヒーロー ===== */
+.hero{position:relative;height:100svh;min-height:620px;overflow:hidden;background:#101820}
+.shot{position:absolute;inset:0;opacity:0;transition:opacity 1.5s var(--ease)}
+.shot.on{opacity:1}
+.shot img{width:100%;height:100%;object-fit:cover;transform:scale(1.04);transition:transform 8s linear}
+.shot.on img{transform:scale(1.12)}
+.shot.s1 img{object-position:50% 42%}
+.shot.s2 img{object-position:46% 46%}
+.shot.s3 img{object-position:62% 40%}
+.hero::after{content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(180deg,rgba(16,24,32,.5) 0%,rgba(16,24,32,.06) 30%,rgba(16,24,32,.74) 100%)}
+.hero-copy{position:absolute;z-index:5;right:20px;bottom:152px;text-align:right;color:#fff;
+  max-width:calc(100% - 40px)}
+@media(min-width:900px){.hero-copy{right:44px;bottom:112px}}
+.hero-copy h1{font-family:var(--mi);font-weight:600;line-height:1.5;letter-spacing:.03em;
+  margin-bottom:16px;text-shadow:0 2px 24px rgba(0,0,0,.5)}
+.hero-copy .ln{display:block;white-space:nowrap;font-size:clamp(19px,5.2vw,48px)}
+.hero-copy .ln em{font-style:normal;
+  background:linear-gradient(transparent 66%,rgba(124,179,66,.78) 66%)}
+.hero-copy p{font-size:clamp(12.5px,1.6vw,15.5px);line-height:2;color:#E7EAE6;margin:0;
+  text-shadow:0 1px 14px rgba(0,0,0,.55)}
+.icard{position:absolute;z-index:6;left:20px;bottom:36px;background:#fff;padding:14px;
+  width:min(370px,calc(100% - 40px));box-shadow:0 16px 44px rgba(16,24,32,.26)}
+@media(min-width:900px){.icard{left:44px;bottom:64px}}
+.icard .tag{position:absolute;top:-13px;left:14px;background:var(--green);color:#fff;font-size:11.5px;
+  font-weight:700;letter-spacing:.1em;padding:3px 13px}
+.icard .row{display:flex;align-items:center;gap:14px}
+.icard .tx{flex:1;min-width:0}
+.icard .pl{font-size:11px;color:var(--ink-3);margin:0 0 2px}
+.icard .nm{font-weight:700;font-size:16.5px;margin:0}
+.icard .yr{display:inline-block;margin-top:6px;font-size:11px;border:1px solid var(--line);
+  padding:2px 10px;color:var(--ink-2)}
+.icard img{width:72px;height:72px;object-fit:cover;object-position:50% 30%;flex:none}
+.icard a{position:absolute;inset:0;text-indent:-9999px;overflow:hidden}
+.dots{position:absolute;z-index:6;right:20px;bottom:26px;display:flex;gap:7px}
+@media(min-width:900px){.dots{right:44px}}
+.dots button{width:34px;height:3px;border:0;padding:0;cursor:pointer;background:rgba(255,255,255,.4);
+  transition:background .2s var(--ease)}
+.dots button:hover{background:rgba(255,255,255,.8)}
+.dots button[aria-current="true"]{background:#fff}
+
+/* ===== 入口ブロック ===== */
+.entry{background:var(--sky);color:#fff}
+.entry .wrap{display:grid;gap:14px;padding-top:32px;padding-bottom:32px}
+@media(min-width:900px){.entry .wrap{grid-template-columns:auto repeat(3,minmax(0,1fr));
+  align-items:center;gap:20px}}
+.entry h2{font-size:16.5px;letter-spacing:.06em;white-space:nowrap}
+.entry a{display:flex;align-items:center;justify-content:space-between;gap:14px;background:#fff;
+  color:var(--ink);text-decoration:none;padding:17px 20px;font-weight:700;font-size:15px;
+  transition:transform .2s var(--ease),box-shadow .2s var(--ease)}
+.entry a:hover{transform:translateY(-2px);box-shadow:0 10px 22px rgba(16,24,32,.18)}
+.entry a small{display:block;font-weight:400;font-size:12px;color:var(--ink-3);margin-top:1px}
+.entry a i{font-style:normal;color:var(--sky)}
+
+/* ===== セクション共通 ===== */
+.sec{display:grid;gap:30px}
+@media(min-width:980px){.sec{grid-template-columns:300px minmax(0,1fr);gap:60px}
+  .sec .side{position:sticky;top:90px;align-self:start}}
+.en{font-size:clamp(34px,5vw,56px);line-height:1;font-weight:700;color:var(--green-pale);
+  letter-spacing:.02em;margin:0 0 6px}
+.side h2{font-size:clamp(20px,2.5vw,27px);margin-bottom:12px}
+.side .note{font-size:14px;color:var(--ink-2);margin:0}
+
+/* ===== MESSAGE ===== */
+.msg-grid{display:grid;gap:28px}
+@media(min-width:820px){.msg-grid{grid-template-columns:minmax(0,1fr) 300px;gap:40px;align-items:start}}
+.lead{font-family:var(--mi);font-size:clamp(19px,2.6vw,27px);line-height:1.85;margin-bottom:22px;max-width:19em}
+.msg-grid .body{color:var(--ink-2);font-size:15px;max-width:34em}
+.msg-pics{display:grid;gap:10px}
+.msg-pics figure{margin:0}
+.msg-pics .a img{aspect-ratio:3/4;object-fit:cover;width:100%}
+.msg-pics .b img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.msg-pics figcaption{font-size:12px;color:var(--ink-3);margin-top:6px;line-height:1.7}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.tags span{font-size:12.5px;font-weight:700;color:var(--green-ink);background:var(--green-pale);padding:6px 13px}
+
+/* ===== EPISODES ===== */
+.dark{background:var(--dark);color:#fff}
+.dark .en{color:#5E7F55}
+.dark .side h2{color:#fff}
+.dark .side .note{color:#DCE6D6}
+.ep{display:grid;gap:12px;padding:26px 0;border-top:1px solid rgba(255,255,255,.16)}
+@media(min-width:760px){.ep{grid-template-columns:188px minmax(0,1fr);gap:26px}}
+.ep .thumb img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.ep:last-of-type{border-bottom:1px solid rgba(255,255,255,.16)}
+.ep .w{font-size:12px;color:#D3DECC;line-height:1.85;margin:10px 0 0}
+.ep .q{font-family:var(--mi);font-size:clamp(16px,1.9vw,18.5px);line-height:2.05;margin:0 0 10px}
+.ep .who{font-size:12.5px;color:#DCE6D6;margin:0}
+
+/* ===== YOUR SKILL ===== */
+.skill-grid{display:grid;gap:14px}
+@media(min-width:820px){.skill-grid{grid-template-columns:minmax(0,320px) minmax(0,1fr);gap:22px;align-items:start}}
+.skill-photo{position:relative;overflow:hidden;margin:0;min-height:260px}
+@media(min-width:820px){.skill-photo{height:100%;min-height:430px}}
+.skill-photo img{width:100%;height:100%;object-fit:cover;transition:transform .5s var(--ease)}
+.skill-photo:hover img{transform:scale(1.04)}
+.skill-photo figcaption{position:absolute;left:0;right:0;bottom:0;padding:18px;color:#fff;font-size:13.5px;
+  line-height:1.8;background:linear-gradient(transparent,rgba(16,24,32,.85))}
+.cards{display:grid;gap:12px}
+@media(min-width:620px){.cards{grid-template-columns:1fr 1fr}}
+.card{background:#fff;border:1px solid var(--line);padding:20px;text-decoration:none;display:block;
+  transition:border-color .2s var(--ease),transform .2s var(--ease)}
+.card:hover{border-color:var(--green);transform:translateY(-2px)}
+.card h3{font-size:16px;margin-bottom:6px}
+.card p{margin:0;font-size:13.5px;color:var(--ink-2);line-height:1.85}
+.card span{display:inline-block;margin-top:10px;font-size:12.5px;font-weight:700;color:var(--green-ink)}
+
+/* ===== 診断 ===== */
+.quiz-band{background:var(--sky-pale)}
+.panel{background:#fff;border:1px solid var(--line);padding:26px 20px}
+@media(min-width:760px){.panel{padding:38px}}
+.progress{display:flex;gap:6px;margin-bottom:22px}
+.progress i{height:3px;flex:1;background:var(--line);transition:background-color .3s var(--ease)}
+.progress i.done{background:var(--sky)}
+.q-count{font-size:13px;color:var(--ink-3);margin-bottom:8px}
+.q-text{font-size:clamp(18px,2.3vw,22px);font-weight:700;margin-bottom:22px;line-height:1.6}
+.opts{display:grid;gap:8px;margin-bottom:20px}
+.opt{display:flex;align-items:center;gap:12px;text-align:left;background:var(--paper);
+  border:1px solid var(--line);padding:16px 18px;min-height:56px;font-family:inherit;font-size:15px;
+  color:inherit;cursor:pointer;
+  transition:border-color .2s var(--ease),background-color .2s var(--ease),transform .2s var(--ease)}
+.opt:hover{border-color:var(--sky);background:#fff;transform:translateX(3px)}
+.opt em{font-style:normal;width:22px;height:22px;flex:none;border:1px solid var(--line-2);border-radius:50%;
+  display:grid;place-items:center;font-size:11px;color:var(--ink-3);transition:all .2s var(--ease)}
+.opt:hover em{border-color:var(--sky);color:var(--sky-ink)}
+.linkish{background:none;border:0;padding:0;font-family:inherit;font-size:14px;color:var(--ink-3);
+  cursor:pointer;text-decoration:underline;text-underline-offset:4px;transition:color .2s var(--ease)}
+.linkish:hover{color:var(--ink)}
+.res-type{font-family:var(--mi);font-size:clamp(22px,3vw,30px);color:var(--sky-ink);margin:6px 0 16px}
+.res-why{margin:0 0 22px;color:var(--ink-2);font-size:15px}
+.res-why li{padding-left:18px;position:relative}
+.res-why li::before{content:"";position:absolute;left:0;top:14px;width:8px;height:1px;background:var(--green)}
+.req{border:1px solid var(--line);border-left:3px solid var(--green);padding:16px 18px;margin-bottom:10px}
+.req b{display:block;font-size:16px;margin-bottom:4px}
+.req span{font-size:14px;color:var(--ink-2);line-height:1.85}
+.fineprint{font-size:13px;color:var(--ink-3);line-height:1.9;margin:20px 0 22px;
+  border-top:1px solid var(--line);padding-top:18px}
+
+/* ===== ボタン ===== */
+.acts{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:14px 26px;
+  font-family:inherit;font-size:15px;font-weight:700;text-decoration:none;border:1px solid transparent;
+  cursor:pointer;transition:background-color .2s var(--ease),color .2s var(--ease),border-color .2s var(--ease),transform .2s var(--ease)}
+.btn:active{transform:translateY(1px)}
+.btn-green{background:var(--green);color:#fff}.btn-green:hover{background:var(--green-d)}
+.btn-sky{background:var(--sky);color:#fff}.btn-sky:hover{background:var(--sky-d)}
+.btn-out{background:#fff;color:var(--ink);border-color:var(--line-2)}
+.btn-out:hover{border-color:var(--ink)}
+.btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.7)}
+.btn-ghost:hover{background:#fff;color:var(--ink)}
+
+/* ===== 仕事 ===== */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.chip{background:transparent;border:1px solid var(--line-2);border-radius:999px;padding:9px 16px;
+  min-height:42px;font-family:inherit;font-size:14px;color:var(--ink-2);cursor:pointer;
+  transition:all .2s var(--ease)}
+.chip:hover{border-color:var(--ink);color:var(--ink)}
+.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+.job{border-top:1px solid var(--line);padding:26px 0}
+.job:last-of-type{border-bottom:1px solid var(--line)}
+.jh{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-bottom:12px}
+.jh h3{font-size:19px}
+.badge{font-size:12px;font-weight:700;padding:4px 10px;line-height:1.7}
+.b-open{background:var(--green);color:#fff}
+.b-req{background:#fff;color:var(--sky-ink);border:1px solid #C5DEE8}
+.job dl{display:grid;gap:10px;margin:0;font-size:15px}
+@media(min-width:760px){.job dl{grid-template-columns:150px minmax(0,1fr);gap:10px 24px}}
+.job dt{font-size:13px;color:var(--ink-3);margin:0}
+.job dd{margin:0;color:var(--ink-2)}
+.empty{border:1px dashed var(--line-2);padding:34px 22px}
+.empty b{display:block;font-size:17px;margin-bottom:6px}
+
+/* ===== 1日 ===== */
+.alt{background:var(--alt)}
+.tl-row{display:grid;grid-template-columns:72px minmax(0,1fr);gap:20px;padding:16px 0;
+  border-top:1px solid var(--line)}
+.tl-row:last-child{border-bottom:1px solid var(--line)}
+.tl-row .hm{font-size:15px;font-weight:700;color:var(--sky-ink);margin:0}
+.tl-row .what{font-size:15px;color:var(--ink-2);margin:0}
+
+/* ===== 働く人 ===== */
+.people{display:grid;gap:18px}
+@media(min-width:800px){.people{grid-template-columns:repeat(3,1fr)}}
+.person{background:#fff;border:1px solid var(--line);transition:border-color .2s var(--ease)}
+.person:hover{border-color:var(--line-2)}
+.person .shot2{aspect-ratio:5/4;overflow:hidden;background:var(--alt)}
+.person .shot2 img{width:100%;height:100%;object-fit:cover;transition:transform .4s var(--ease)}
+.person:hover .shot2 img{transform:scale(1.03)}
+.person .body2{padding:20px}
+.person h3{font-size:17px}
+.person .role{font-size:13px;color:var(--green-ink);font-weight:700;margin:2px 0 12px}
+.person .prev{font-size:13px;color:var(--ink-3);margin:0 0 10px}
+.person .say{font-family:var(--mi);font-size:15px;line-height:1.95;margin:0}
+
+/* ===== 事業所 ===== */
+.fac-group{margin-bottom:34px}
+.fac-group > h3{font-size:15px;color:var(--sky-ink);padding-bottom:10px;border-bottom:1px solid var(--line)}
+.fac-row{display:grid;gap:4px;padding:16px 0;border-bottom:1px solid var(--line)}
+@media(min-width:700px){.fac-row{grid-template-columns:minmax(0,1fr) 1.2fr 140px;gap:20px;align-items:baseline}}
+.fac-row .nm{font-weight:700;font-size:16px;margin:0}
+.fac-row .sv,.fac-row .ar{font-size:14px;color:var(--ink-2);margin:0}
+
+/* ===== FAQ ===== */
+details{border-bottom:1px solid var(--line)}
+details summary{list-style:none;cursor:pointer;display:flex;gap:18px;justify-content:space-between;
+  align-items:flex-start;padding:20px 0;font-size:16px;font-weight:700;transition:color .2s var(--ease)}
+details summary:hover{color:var(--sky-ink)}
+summary::-webkit-details-marker{display:none}
+summary i{flex:none;width:20px;height:20px;position:relative;margin-top:6px}
+summary i::before,summary i::after{content:"";position:absolute;background:var(--sky);
+  transition:transform .2s var(--ease),opacity .2s var(--ease)}
+summary i::before{left:0;top:9px;width:20px;height:1.5px}
+summary i::after{left:9px;top:0;width:1.5px;height:20px}
+details[open] summary i::after{transform:scaleY(0);opacity:0}
+details .ans{padding:0 0 22px;color:var(--ink-2);font-size:15px;max-width:44em}
+
+/* ===== 最終CTA・フッター ===== */
+.final{background:var(--dark);color:#fff}
+.final h2{font-family:var(--mi);font-size:clamp(24px,4.2vw,40px);line-height:1.5;margin-bottom:22px;max-width:14em}
+.final p{color:#E0E9DA;max-width:34em;font-size:15px}
+.final .acts{margin-top:28px}
+.steps{display:grid;gap:14px;margin-top:40px;padding-top:26px;border-top:1px solid rgba(255,255,255,.18)}
+@media(min-width:760px){.steps{grid-template-columns:repeat(4,1fr);gap:22px}}
+.step .n{font-size:12px;color:#D8E9C4;font-weight:700;margin-bottom:6px}
+.step p{font-size:14px;color:#E0E9DA;margin:0;line-height:1.85}
+.foot{background:var(--dark-2);color:#C3D2BC;font-size:13px;padding:34px 0 104px;
+  border-top:1px solid rgba(255,255,255,.12)}
+.foot a{color:#E4EDDE;transition:color .2s var(--ease)}
+.foot a:hover{color:#fff}
+.foot p{margin:0 0 8px}
+
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:40;display:flex;gap:8px;padding:10px 12px;
+  background:rgba(251,251,248,.97);border-top:1px solid var(--line)}
+.bar a{flex:1;min-height:50px;font-size:14px;padding:12px 10px}
+@media(min-width:1060px){.bar{display:none}}
+.todo{display:inline-block;font-size:11px;font-weight:700;color:#1F6F8F;background:var(--sky-pale);
+  border:1px solid #C5DEE8;padding:1px 7px;margin-right:6px}
+.fine{font-size:12.5px;color:var(--ink-3);line-height:1.9}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}
+  *,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important}
+  .shot img{transform:none!important}}
+</style>
+</head>
+<body>
+
+<header class="head">
+  <div class="wrap head-in">
+    <a class="brand" href="#top"><b>おりーぶグループ</b><small>RECRUIT SITE</small></a>
+    <nav class="pill" aria-label="メニュー">
+      <a href="#message">おりーぶを知る</a><a href="#episodes">現場の出来事</a>
+      <a href="#skill">前職の活かし方</a><a href="#jobs">仕事と条件</a><a href="#facility">事業所</a>
+    </nav>
+  </div>
+</header>
+<a class="req-btn" href="#jobs">募集要項</a>
+
+<div class="stickybar" id="sticky">
+  <div class="wrap">
+    <b>おりーぶグループ 採用</b>
+    <nav aria-label="ページ内">
+      <a href="#episodes">現場の出来事</a><a href="#quiz">適性診断</a>
+      <a href="#jobs">仕事と条件</a><a href="#facility">事業所</a><a href="#faq">よくある質問</a>
+    </nav>
+    <a class="go" href="#visit">30分の見学を申し込む</a>
+  </div>
+</div>
+
+<!-- ===== HERO ===== -->
+<div class="hero" id="top">
+  <div class="shot s1 on"><picture><source srcset="images/hero-01.webp" type="image/webp">
+    <img src="images/hero-01.jpg" alt="研修で前を向いて話を聞く2人のスタッフ" fetchpriority="high"></picture></div>
+  <div class="shot s2"><picture><source srcset="images/hero-02.webp" type="image/webp">
+    <img src="images/hero-02.jpg" alt="教材を使って子どもの学習に付き添うスタッフ" loading="lazy"></picture></div>
+  <div class="shot s3"><picture><source srcset="images/hero-03.webp" type="image/webp">
+    <img src="images/hero-03.jpg" alt="事業所でピアノを弾くスタッフ" loading="lazy"></picture></div>
+
+  <div class="hero-copy">
+    <h1><span class="ln">あなたの経験が、</span><span class="ln"><em>誰かの「できる」に変わる。</em></span></h1>
+    <p>福祉の経験だけが、必要なわけじゃない。<br>教えること。話を聴くこと。身体を動かすこと。人を楽しませること。</p>
+  </div>
+
+  <article class="icard">
+    <span class="tag">スタッフインタビュー</span>
+    <div class="row">
+      <div class="tx">
+        <p class="pl">おりーぶ瑞穂／児童指導員</p>
+        <p class="nm">【仮】スタッフA</p>
+        <span class="yr">前職：学習塾の講師／3年目</span>
+      </div>
+      <picture><source srcset="images/staff-01.webp" type="image/webp">
+        <img src="images/staff-01.jpg" alt="スタッフ写真（イメージ）"></picture>
+    </div>
+    <a href="#staff">インタビューを読む</a>
+  </article>
+
+  <div class="dots" id="dots" role="group" aria-label="写真の切り替え"></div>
+</div>
+
+<!-- ===== 入口は3つ ===== -->
+<section class="entry">
+  <div class="wrap">
+    <h2>入口は3つ。</h2>
+    <a href="#visit"><span>まず見学する<small>所要30分・私服でどうぞ</small></span><i>→</i></a>
+    <a href="#quiz"><span>適性を診断する<small>4問1分・合否とは無関係</small></span><i>→</i></a>
+    <a href="#jobs"><span>求人を見る<small>資格不問の職種もあります</small></span><i>→</i></a>
+  </div>
+</section>
+
+<!-- ===== MESSAGE ===== -->
+<section class="band" id="message">
+  <div class="wrap sec">
+    <div class="side">
+      <p class="en">MESSAGE</p>
+      <h2>人の可能性を<br>見つける仕事です。</h2>
+      <p class="note">できないことを数えるのではなく、できるようになった瞬間に立ち会う仕事です。</p>
+    </div>
+    <div class="msg-grid">
+      <div>
+        <p class="lead">昨日できなかったことが、今日できる。その瞬間に立ち会って、次の一歩を一緒に考える。</p>
+        <p class="body">必要なのは福祉の知識より先に、目の前の人の「やってみたい」に気づく力です。気づいたあとに何をするかは、チームで考えます。</p>
+        <p class="body">教えてきた人、人を楽しませてきた人、身体を動かしてきた人、話を聴いてきた人。その経験は、そのまま支援の形になります。</p>
+        <p class="body">おりーぶは兵庫県伊丹市・尼崎市で、子どもの療育から、働く場所、暮らす場所までを運営しています。関われる現場の幅が広いぶん、自分の得意が活きる場所も見つけやすい環境です。</p>
+        <p class="body">ただし、簡単な仕事だとは言いません。記録も、保護者対応も、覚えることはあります。だから最初の数か月は必ず先輩と一緒に動きます。</p>
+        <div class="tags"><span>児童発達支援</span><span>放課後等デイサービス</span><span>就労継続支援B型</span><span>グループホーム</span></div>
+      </div>
+      <div class="msg-pics">
+        <figure class="a"><picture><source srcset="images/message-01.webp" type="image/webp">
+          <img src="images/message-01.jpg" alt="スタッフ同士で支援の方針を相談している様子" loading="lazy"></picture></figure>
+        <figure class="b"><picture><source srcset="images/message-02.webp" type="image/webp">
+          <img src="images/message-02.jpg" alt="事業所の室内で立ち話をするスタッフ" loading="lazy"></picture>
+          <figcaption>支援の方針は、ひとりで抱えずチームで決めます。</figcaption></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EPISODES ===== -->
+<section class="band dark" id="episodes">
+  <div class="wrap sec">
+    <div class="side">
+      <p class="en">EPISODES</p>
+      <h2>その日、<br>現場で起きたこと。</h2>
+      <p class="note">理念より先に、実際にあった出来事を読んでください。この仕事が何なのかは、ここに全部あります。</p>
+    </div>
+    <div>
+      <div id="epList"></div>
+      <p class="fine" style="color:#D3DECC;margin-top:18px"><span class="todo">要差し替え</span>構成確認用のダミーです。スタッフへの聞き取りで差し替え、利用者が特定されない表現にしてください。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== YOUR SKILL ===== -->
+<section class="band" id="skill">
+  <div class="wrap sec">
+    <div class="side">
+      <p class="en">YOUR SKILL</p>
+      <h2>その経験、<br>ここで使えます。</h2>
+      <p class="note">療育、就労支援、農園、カフェ、情報発信。現場の幅が広いので、前職がそのまま武器になります。</p>
+    </div>
+    <div class="skill-grid">
+      <figure class="skill-photo">
+        <picture><source srcset="images/skill-01.webp" type="image/webp">
+          <img src="images/skill-01.jpg" alt="感覚統合療法スペースで子どもたちと活動するスタッフ" loading="lazy"></picture>
+        <figcaption>感覚統合療法スペースでの活動。<br>体を動かす経験がそのまま活きる現場です。</figcaption>
+      </figure>
+      <div class="cards" id="skillCards"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 適性診断 ===== -->
+<section class="band quiz-band" id="quiz">
+  <div class="wrap sec">
+    <div class="side">
+      <p class="en" style="color:#CFE7F1">DIAGNOSIS</p>
+      <h2>あなたは、<br>何を活かせる？</h2>
+      <p class="note">4問で1分。採用の合否とは関係なく、回答は保存も送信もされません。</p>
+    </div>
+    <div class="panel" id="quizPanel"></div>
+  </div>
+</section>
+
+<!-- ===== 仕事と応募要件 ===== -->
+<section class="band" id="jobs">
+  <div class="wrap sec">
+    <div class="side">
+      <p class="en">JOBS</p>
+      <h2>資格がなくても<br>始められる仕事。</h2>
+      <p class="note">資格が必要な仕事と、そうでない仕事があります。入口を正直に書いています。</p>
+    </div>
+    <div>
+      <div class="filters" id="filters" role="group" aria-label="職種のしぼり込み"></div>
+      <div id="jobList"></div>
+      <p class="fine" style="margin-top:16px"><span class="todo">要確認</span>給与・勤務時間は確定値に差し替え、Indeedの原稿と同一の表記にすること。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ある一日 ===== -->
+<section class="band alt" id="day">
+  <div class="wrap sec">
+    <div class="side">
+      <p class="en" style="color:#E2E7DC">A DAY</p>
+      <h2>放課後等デイの、<br>ある一日。</h2>
+      <p class="note"><span class="todo">要確認</span>実際のシフトに合わせて時刻を修正してください。</p>
+    </div>
+    <div id="tl"></div>
+  </div>
+</section>
+
+<!-- ===== 働く人 ===== -->
+<section class="band" id="staff">
+  <div class="wrap sec">
+    <div class="side">
+      <p class="en">PEOPLE</p>
+      <h2>前職は、<br>ばらばらです。</h2>
+      <p class="note">共通しているのは、誰かの「できた」を一緒に喜べることだけです。</p>
+    </div>
+    <div>
+      <div class="people" id="people"></div>
+      <p class="fine" style="margin-top:16px"><span class="todo">要差し替え</span>氏名・経歴はダミー、写真はイメージです。撮影と掲載同意の取得後に差し替えてください。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 事業所 ===== -->
+<section class="band alt" id="facility">
+  <div class="wrap sec">
+    <div class="side">
+      <p class="en" style="color:#E2E7DC">PLACES</p>
+      <h2>伊丹市と尼崎市に、<br>10か所以上。</h2>
+      <p class="note">子ども向けの事業所と、大人向けの事業所があります。勤務地の希望は相談できます。</p>
+    </div>
+    <div id="facWrap"></div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="band" id="faq">
+  <div class="wrap sec">
+    <div class="side">
+      <p class="en">FAQ</p>
+      <h2>できないことも、<br>先に書きます。</h2>
+      <p class="note">条件があるものは条件を、決まっていないものは決まっていないと書いています。</p>
+    </div>
+    <div id="faqList"></div>
+  </div>
+</section>
+
+<!-- ===== 最終CTA ===== -->
+<section class="band final" id="visit">
+  <div class="wrap">
+    <h2>「ちょっと気になる」<br>からで大丈夫です。</h2>
+    <p>まず30分だけ、事業所を見にきてください。スタッフに質問するだけでも構いません。応募するかどうかは、そのあとで決めれば大丈夫です。</p>
+    <div class="acts">
+      <a class="btn btn-green" href="#" data-todo="見学申込フォームのURL">30分の見学を申し込む</a>
+      <a class="btn btn-ghost" href="#" data-todo="相談窓口（電話／LINE）">まず質問してみる</a>
+      <a class="btn btn-ghost" href="#jobs">募集中の仕事を見る</a>
+    </div>
+    <div class="steps">
+      <div class="step"><p class="n">STEP 1</p><p>見学を申し込む。所要30分、私服で大丈夫です。</p></div>
+      <div class="step"><p class="n">STEP 2</p><p>事業所を見て、働いている人に質問する。</p></div>
+      <div class="step"><p class="n">STEP 3</p><p>気になれば応募。合わなければ、そこで終わりで構いません。</p></div>
+      <div class="step"><p class="n">STEP 4</p><p>面接、そして入職。最初の数か月は先輩と一緒に動きます。</p></div>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap">
+    <p>おりーぶグループ ／ 運営：<span class="todo">要確認</span>運営法人名</p>
+    <p>掲載している人物写真の一部はイメージです。</p>
+    <p><a href="https://www.olive-jp.co/" rel="noopener">児童部門</a>　<a href="https://www.olive-b.com/" rel="noopener">就労支援</a>　<a href="https://www.olivehome.work/" rel="noopener">グループホーム</a></p>
+  </div>
+</footer>
+
+<div class="bar">
+  <a class="btn btn-green" href="#visit">見学を申し込む</a>
+  <a class="btn btn-out" href="#quiz">適性診断</a>
+</div>
+
+<script>
+/* ===================== DATA ===================== */
+const DATA = {
+  episodes:[
+    {img:'images/ep-01',alt:'放課後等デイサービスの活動風景',when:'【仮】6月<br>放課後等デイ',text:'ずっと教室の隅にいた子が、はじめて「これ、やる」と言った。前の職場で子ども向けの体操教室をしていた職員が、跳び箱のマットを一枚だけ出しておいた日のことだった。',who:'児童指導員（前職：スポーツ指導）'},
+    {img:'images/ep-02',alt:'就労継続支援B型での手作業の様子',when:'【仮】9月<br>就労継続支援B型',text:'作業の手順を、自分で決められるようになった利用者さんがいる。手順表を作り直したのは、飲食店で店長をしていた職員だった。',who:'職業指導員（前職：飲食店店長）'},
+    {img:'images/ep-03',alt:'打ち合わせで申し送りを共有する様子',when:'【仮】12月<br>グループホーム',text:'夜勤明けの申し送りで「昨日、自分から電気を消していました」と報告があった。記録に残らないくらい小さな変化を、全員が拾えるようにノートの書き方を変えた。',who:'世話人（前職：介護職）'}
+  ],
+  skills:[
+    {t:'教育・学習支援',d:'教えてきた経験は、その子に合う伝え方を探す力になります。',to:'#jobs'},
+    {t:'スポーツ・運動',d:'身体を動かす楽しさは、そのまま運動プログラムになります。',to:'#jobs'},
+    {t:'接客・サービス',d:'相手の様子を見て先に動く力は、日々の支援そのものです。',to:'#jobs'},
+    {t:'ものづくり・農作業',d:'農園やカフェなど、手を動かす現場があります。',to:'#facility'},
+    {t:'IT・SNS・動画',d:'活動の発信や、記録のしくみづくりに関われます。',to:'#jobs'},
+    {t:'医療・リハビリ',d:'感覚統合や機能訓練の現場で、専門性をそのまま活かせます。',to:'#jobs'}
+  ],
+  jobs:[
+    {name:'サポートスタッフ',open:true,work:'子どもや利用者さんと一緒に過ごしながら、活動の準備・見守り・片づけを担当します。',
+     fit:'まず現場を知りたい人。福祉がはじめての人。',use:'接客、保育、スポーツ、家事など人と関わってきた経験全般。',
+     req:'資格・経験は不問【要確認：最新の募集条件】'},
+    {name:'送迎ドライバー',open:true,work:'子どもや利用者さんの送り迎え。1日2〜3時間からの勤務です。',
+     fit:'空いた時間で関わりたい人。',use:'運転歴。',req:'普通自動車運転免許（AT限定可）【要確認】'},
+    {name:'児童指導員',open:false,work:'個別・集団の療育プログラムの計画と実施、記録、保護者対応。',
+     fit:'子どもの変化に気づくのが好きな人。',use:'教育・保育・スポーツ指導の経験。',
+     req:'小・中・高の教諭資格または幼稚園教諭（経験不問）、もしくは障がい児施設での経験2年以上【要確認】'},
+    {name:'保育士',open:false,work:'児童発達支援・放課後等デイサービスでの療育、日々の支援と記録。',
+     fit:'一人ひとりに合わせた関わりを考えたい人。',use:'保育所・幼稚園での経験。ブランクも相談できます【要確認】。',
+     req:'保育士資格'},
+    {name:'児童発達支援管理責任者',open:false,work:'個別支援計画の作成、支援全体の組み立て、チームの調整。',
+     fit:'現場を支える側に回りたい人。',use:'相談支援・直接支援の実務経験。',
+     req:'保育士・教諭等としての実務経験5年以上、または障がい児・者施設での実務経験5年以上。研修受講済みの方は優遇【要確認】'},
+    {name:'サービス管理責任者',open:false,work:'就労支援・グループホームでの個別支援計画の作成と支援管理。',
+     fit:'一人の生活を長い目で見たい人。',use:'福祉・医療分野での実務経験。',
+     req:'実務経験および研修要件【要確認：最新の募集条件】'},
+    {name:'PT・OT・ST',open:false,work:'感覚統合療法スペースでの機能訓練と、プログラムの設計。',
+     fit:'子どもの発達に専門性を活かしたい人。',use:'病院・施設でのリハビリ経験。',
+     req:'理学療法士／作業療法士／言語聴覚士のいずれか'},
+    {name:'生活支援員・世話人',open:false,work:'就労継続支援B型やグループホームでの、日常生活の支援。',
+     fit:'暮らしを一緒につくりたい人。',use:'介護・家事・接客の経験。',req:'【要確認：資格要件と未経験可否】'}
+  ],
+  day:[
+    {t:'09:30',d:'出勤。今日来る子どもの様子を共有します。'},
+    {t:'10:00',d:'教室の準備と、プログラムの打ち合わせ。'},
+    {t:'11:00',d:'記録の整理、保護者への連絡。'},
+    {t:'12:00',d:'休憩。'},
+    {t:'14:00',d:'送迎に出発。学校へお迎えに行きます。'},
+    {t:'15:00',d:'来所。おやつのあと、個別・集団の活動。'},
+    {t:'17:00',d:'送迎。そのあと記録と振り返り。'},
+    {t:'19:00',d:'退勤。【仮：実シフトに要修正】'}
+  ],
+  staff:[
+    {n:'【仮】スタッフA',r:'児童指導員／3年目',b:'前職：学習塾の講師',
+     w:'「できない」を減らすより、「やってみたい」を増やす仕事でした。',img:'images/staff-01'},
+    {n:'【仮】スタッフB',r:'職業指導員／5年目',b:'前職：飲食店の店長',
+     w:'段取りを考えるのは前職と同じ。相手のペースに合わせる点だけが違います。',img:'images/message-01'},
+    {n:'【仮】スタッフC',r:'児童指導員／2年目',b:'前職：音楽教室の講師',
+     w:'音楽の時間は、言葉が少ない子とも話ができる時間です。',img:'images/hero-03'}
+  ],
+  facilities:[
+    {group:'子どもの事業所（児童発達支援・放課後等デイサービス）',items:[
+      {n:'おりーぶ瑞穂',s:'児童発達支援・放課後等デイサービス',a:'伊丹市'},
+      {n:'おりーぶ瑞穂第2教室',s:'放課後等デイサービス',a:'伊丹市'},
+      {n:'おりーぶ瑞ヶ丘',s:'放課後等デイサービス',a:'伊丹市'},
+      {n:'おりーぶ武庫之荘教室',s:'放課後等デイサービス',a:'尼崎市'},
+      {n:'おりーぶせらぴー',s:'放課後等デイサービス／感覚統合療法スペース',a:'尼崎市西昆陽'},
+      {n:'おりーぶSocial',s:'【要確認】',a:'【要確認】'},
+      {n:'すまいるりんくkids',s:'児童発達支援',a:'【要確認】'},
+      {n:'すまいるりんく',s:'放課後等デイサービス',a:'【要確認】'}
+    ]},
+    {group:'大人の事業所（就労・生活支援）',items:[
+      {n:'おりーぶ西昆陽',s:'就労継続支援B型',a:'尼崎市西昆陽'},
+      {n:'Cafè・de・olive NOMAKITA',s:'就労継続支援B型',a:'尼崎市'},
+      {n:'おりーぶファーム',s:'農園での作業',a:'尼崎市西昆陽'},
+      {n:'おりーぶ堀池',s:'障がい者グループホーム',a:'尼崎市'}
+    ]},
+    {group:'掲載可否を確認中【要確認】',items:[
+      {n:'短期入所・日中一時支援',s:'【要確認】',a:'【要確認】'}
+    ]}
+  ],
+  faq:[
+    {q:'福祉未経験でも応募できますか？',a:'サポートスタッフと送迎ドライバーは資格・経験を問いません。児童指導員や保育士には資格要件があるため、未経験の方はサポートスタッフから始め、働きながら資格取得を目指す方法があります。'},
+    {q:'異業種からの転職でも大丈夫ですか？',a:'教育、接客、スポーツ、飲食など、さまざまな前職の職員がいます。ただし記録や個別支援計画など、覚えることはあります。最初の数か月は先輩と一緒に動きます。'},
+    {q:'ブランクがありますが大丈夫ですか？',a:'相談できます。勤務時間や担当業務を調整した例があります。【要確認：実例の有無】'},
+    {q:'資格取得の支援はありますか？',a:'【要確認：制度の有無と内容】制度がない場合は、ない旨をそのまま記載します。'},
+    {q:'研修はどのくらいありますか？',a:'【要確認：入職時研修の日数と内容】'},
+    {q:'子育てと両立できますか？',a:'【要確認：時短勤務の実績】'},
+    {q:'見学だけでもできますか？',a:'できます。所要30分ほどで、私服で構いません。応募の意思がなくても大丈夫です。'},
+    {q:'応募前に質問だけしたいのですが。',a:'できます。見学と同じ窓口で受け付けています。'}
+  ],
+  quiz:{
+    questions:[
+      {q:'人と関わるとき、自分に近いのは？',opts:[
+        {t:'教える・伝える',s:'teach'},{t:'話を聴く・寄り添う',s:'listen'},
+        {t:'一緒に体を動かす',s:'move'},{t:'手順を整える・段取る',s:'plan'}]},
+      {q:'関わってみたいのは？',opts:[
+        {t:'小学生から高校生の子ども',s:'child'},{t:'未就学の子ども',s:'child'},
+        {t:'働く大人',s:'adult'},{t:'暮らしを支える場面',s:'life'}]},
+      {q:'前の仕事で得意だったのは？',opts:[
+        {t:'人前で進行する',s:'teach'},{t:'細かい変化に気づく',s:'listen'},
+        {t:'体を使う作業',s:'move'},{t:'記録や書類を整える',s:'plan'}]},
+      {q:'いま持っている資格は？',opts:[
+        {t:'保育士・教諭',s:'lic'},{t:'PT・OT・ST',s:'reha'},
+        {t:'介護系の資格',s:'care'},{t:'とくにない',s:'none'}]}
+    ],
+    types:{
+      teach:{name:'伝えるのが得意なタイプ',jobs:['児童指導員','保育士','サポートスタッフ'],
+        why:['伝え方を工夫する場面が多い療育の現場が向いています。','前職で人に教えていた経験がそのまま使えます。']},
+      listen:{name:'気づくのが得意なタイプ',jobs:['生活支援員・世話人','サポートスタッフ'],
+        why:['小さな変化を拾うことが仕事の中心になります。','暮らしの場面での支援に向いています。']},
+      move:{name:'一緒に動くのが得意なタイプ',jobs:['サポートスタッフ','PT・OT・ST'],
+        why:['運動や感覚統合のプログラムに関わる場面があります。','農園やカフェなど、体を使う現場もあります。']},
+      plan:{name:'整えるのが得意なタイプ',jobs:['児童発達支援管理責任者','サービス管理責任者','サポートスタッフ'],
+        why:['計画づくりや記録の整備は、支援の土台です。','前職の段取り力がそのまま活きます。']}
+    }
+  }
+};
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const $=id=>document.getElementById(id);
+const pic=(base,alt,cls)=>`<picture><source srcset="${base}.webp" type="image/webp">
+  <img src="${base}.jpg" alt="${esc(alt)}" loading="lazy"${cls?' class="'+cls+'"':''}></picture>`;
+
+/* ===== ヒーロー ===== */
+(function(){
+  const shots=[...document.querySelectorAll('.shot')],dots=$('dots');
+  const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let cur=0,t=null;
+  shots.forEach((_,i)=>{const b=document.createElement('button');b.type='button';
+    b.setAttribute('aria-label',(i+1)+'枚目の写真を表示');
+    b.setAttribute('aria-current',i?'false':'true');b.onclick=()=>go(i);dots.appendChild(b);});
+  const btns=[...dots.children];
+  function go(n){shots[cur].classList.remove('on');btns[cur].setAttribute('aria-current','false');
+    cur=(n+shots.length)%shots.length;shots[cur].classList.add('on');
+    btns[cur].setAttribute('aria-current','true');
+    clearInterval(t);if(!reduce)t=setInterval(()=>go(cur+1),5600);}
+  if(!reduce)t=setInterval(()=>go(cur+1),5600);
+  document.addEventListener('visibilitychange',()=>{
+    if(document.hidden)clearInterval(t);else if(!reduce)t=setInterval(()=>go(cur+1),5600);});
+})();
+(function(){
+  const bar=$('sticky'),hero=document.querySelector('.hero');
+  new IntersectionObserver(([e])=>bar.classList.toggle('on',!e.isIntersecting),
+    {rootMargin:'-60px 0px 0px 0px'}).observe(hero);
+})();
+
+/* ===== 描画 ===== */
+$('epList').innerHTML=DATA.episodes.map(e=>`
+  <article class="ep">
+    <div class="thumb">${pic(e.img,e.alt)}<p class="w">${e.when}</p></div>
+    <div><p class="q">${esc(e.text)}</p><p class="who">${esc(e.who)}</p></div>
+  </article>`).join('');
+
+$('skillCards').innerHTML=DATA.skills.map(s=>`
+  <a class="card" href="${esc(s.to)}"><h3>${esc(s.t)}</h3><p>${esc(s.d)}</p>
+  <span>活かせる仕事へ →</span></a>`).join('');
+
+$('tl').innerHTML=DATA.day.map(d=>`
+  <div class="tl-row"><p class="hm">${esc(d.t)}</p><p class="what">${esc(d.d)}</p></div>`).join('');
+
+$('people').innerHTML=DATA.staff.map(s=>`
+  <article class="person"><div class="shot2">${pic(s.img,'スタッフ写真（イメージ）')}</div>
+    <div class="body2"><h3>${esc(s.n)}</h3><p class="role">${esc(s.r)}</p>
+    <p class="prev">${esc(s.b)}</p><p class="say">${esc(s.w)}</p></div></article>`).join('');
+
+$('facWrap').innerHTML=DATA.facilities.map(g=>`
+  <div class="fac-group"><h3>${esc(g.group)}</h3>
+    ${g.items.map(i=>`<div class="fac-row"><p class="nm">${esc(i.n)}</p>
+      <p class="sv">${esc(i.s)}</p><p class="ar">${esc(i.a)}</p></div>`).join('')}</div>`).join('');
+
+$('faqList').innerHTML=DATA.faq.map(f=>`
+  <details><summary>${esc(f.q)}<i aria-hidden="true"></i></summary>
+  <p class="ans">${esc(f.a)}</p></details>`).join('');
+
+/* ===== 仕事：絞り込み＋空の状態 ===== */
+(function(){
+  const box=$('jobList'),bar=$('filters');
+  const modes=[{k:'all',t:'すべて'},{k:'open',t:'資格・経験不問'},{k:'lic',t:'資格が必要'}];
+  let mode='all';
+  bar.innerHTML=modes.map(m=>`<button class="chip" type="button" data-k="${m.k}"
+    aria-pressed="${m.k===mode}">${m.t}</button>`).join('');
+  bar.addEventListener('click',e=>{const b=e.target.closest('.chip');if(!b)return;
+    mode=b.dataset.k;[...bar.children].forEach(c=>c.setAttribute('aria-pressed',c.dataset.k===mode));
+    render();});
+  function render(){
+    const list=DATA.jobs.filter(j=>mode==='all'||(mode==='open'?j.open:!j.open));
+    if(!list.length){box.innerHTML=`<div class="empty"><b>この条件の募集は今ありません</b>
+      <p>条件を「すべて」に戻すか、見学のときに直接ご相談ください。募集していない職種でも、状況を聞くことはできます。</p>
+      <a class="btn btn-out" href="#visit">見学して相談する</a></div>`;return;}
+    box.innerHTML=list.map(j=>`<article class="job">
+      <div class="jh"><h3>${esc(j.name)}</h3>
+        <span class="badge ${j.open?'b-open':'b-req'}">${j.open?'資格・経験不問':'資格要件あり'}</span></div>
+      <dl><dt>どんな仕事</dt><dd>${esc(j.work)}</dd>
+      <dt>向いている人</dt><dd>${esc(j.fit)}</dd>
+      <dt>活かせる経験</dt><dd>${esc(j.use)}</dd>
+      <dt>応募要件</dt><dd>${esc(j.req)}</dd></dl></article>`).join('');
+  }
+  render();
+})();
+
+/* ===== 適性診断 ===== */
+(function(){
+  const panel=$('quizPanel'),Q=DATA.quiz.questions;
+  let step=0,picks=[];
+  const bars=()=>`<div class="progress">${Q.map((_,i)=>`<i class="${i<step?'done':''}"></i>`).join('')}</div>`;
+  function render(){
+    if(step>=Q.length)return result();
+    const q=Q[step];
+    panel.innerHTML=`${bars()}
+      <p class="q-count">質問 ${step+1} / ${Q.length}</p>
+      <p class="q-text">${esc(q.q)}</p>
+      <div class="opts">${q.opts.map((o,i)=>
+        `<button class="opt" type="button" data-i="${i}"><em>${i+1}</em>${esc(o.t)}</button>`).join('')}</div>
+      ${step?'<button class="linkish" type="button" id="back">ひとつ前に戻る</button>':''}`;
+    panel.querySelectorAll('.opt').forEach(b=>b.addEventListener('click',()=>{
+      picks[step]=q.opts[b.dataset.i].s;step++;render();
+      panel.scrollIntoView({block:'center',behavior:'smooth'});}));
+    const back=$('back');if(back)back.addEventListener('click',()=>{step--;picks.pop();render();});
+  }
+  function result(){
+    const score={};picks.forEach(s=>score[s]=(score[s]||0)+1);
+    const order=['teach','listen','move','plan'];
+    let top=order[0];order.forEach(k=>{if((score[k]||0)>(score[top]||0))top=k;});
+    const t=DATA.quiz.types[top];
+    let names=t.jobs.slice();
+    if(score.lic)names=['保育士','児童指導員'].concat(names);
+    if(score.reha)names=['PT・OT・ST'].concat(names);
+    if(score.care)names=names.concat(['生活支援員・世話人']);
+    if(score.none)names=['サポートスタッフ','送迎ドライバー'].concat(
+      names.filter(n=>['サポートスタッフ','送迎ドライバー'].includes(n)));
+    names=[...new Set(names)].slice(0,3);
+    const jobs=names.map(n=>DATA.jobs.find(j=>j.name===n)).filter(Boolean);
+    panel.innerHTML=`<div class="progress">${Q.map(()=>'<i class="done"></i>').join('')}</div>
+      <p class="q-count">診断結果</p>
+      <p class="res-type">${esc(t.name)}</p>
+      <ul class="res-why">${t.why.map(w=>`<li>${esc(w)}</li>`).join('')}</ul>
+      ${jobs.map(j=>`<div class="req"><b>${esc(j.name)}</b><span>${esc(j.req)}</span></div>`).join('')}
+      <p class="fineprint">これは興味の方向を知るための目安で、採用の合否とは関係ありません。
+      要件を満たしていない場合でも、資格・経験を問わないサポートスタッフや送迎ドライバーから始める方法があります。</p>
+      <div class="acts"><a class="btn btn-sky" href="#visit">この仕事を見学する</a>
+        <a class="btn btn-out" href="#jobs">仕事の詳細を見る</a>
+        <button class="btn btn-out" type="button" id="again">もう一度やる</button></div>`;
+    $('again').addEventListener('click',()=>{step=0;picks=[];render();});
+  }
+  render();
+})();
+</script>
+</body>
+</html>
